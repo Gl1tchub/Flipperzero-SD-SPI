@@ -253,7 +253,7 @@ void app_scene_on_enter_password(void* context) {
         text_input_done_callback,
         app,
         app->input_pwd,
-        PASSWORD_MAX_LEN,
+        PASSWORD_MAX_LEN+1,
         false);
     view_dispatcher_switch_to_view(app->view_dispatcher, AppView_TextInput);
 }
